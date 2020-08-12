@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pattern">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4.7"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/return1"
+            android:layout_width="50sp"
+            android:layout_height="45sp"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="10sp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/return1" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35sp"
+            android:layout_marginTop="15sp"
+            android:text="化石探し"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="山"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.4">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="60dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/yama4" />
+
+        <ImageView
+            android:id="@+id/pow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/kumo" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="60dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/yama2" />
+
+        <ImageView
+            android:id="@+id/pow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="60dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/yama" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="見つけた岩を砕いて、化石を発見しよう！"
+            android:textColor="@color/common_signin_btn_default_background"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView21"
+            android:gravity="center"
+            android:text="（全部で10種類）"
+            android:textColor="@color/wallet_hint_foreground_holo_dark"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/iwa1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/iwa3"
+            android:layout_marginEnd="38dp"
+            android:layout_marginRight="38dp"
+            android:layout_marginTop="92dp"
+            android:layout_toLeftOf="@+id/iwa3"
+            android:layout_toStartOf="@+id/iwa3"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/iwa1" />
+
+        <ImageButton
+            android:id="@+id/iwa2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/iwa1"
+            android:layout_marginBottom="27dp"
+            android:layout_marginLeft="51dp"
+            android:layout_marginStart="51dp"
+            android:layout_toEndOf="@+id/iwa3"
+            android:layout_toRightOf="@+id/iwa3"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/iwa1" />
+
+        <ImageButton
+            android:id="@+id/iwa3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/imageView7"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="79dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/iwa1" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4.8"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_tohome"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_customize4"
+            android:onClick="onClick"
+            android:text="マイページ"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_tomuseum"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_customize4"
+            android:onClick="onClick"
+            android:text="博物館"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_torecord"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_customize4"
+            android:onClick="onClick"
+            android:text="記録"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_toranking"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@drawable/button_customize4"
+            android:onClick="onClick"
+            android:text="ランキング" />
+
+    </LinearLayout>
+
+</LinearLayout>

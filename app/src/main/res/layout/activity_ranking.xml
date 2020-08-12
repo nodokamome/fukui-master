@@ -1,0 +1,864 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pattern">
+
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5.1"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/return1"
+                android:layout_width="50sp"
+                android:layout_height="45sp"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="10sp"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/return1" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35sp"
+                android:layout_marginTop="15sp"
+                android:text="ランキング"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.6"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4.7"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/my"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="12"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="21dp"
+                        android:layout_marginStart="21dp"
+                        android:text="あなたの成績"
+                        android:textColor="@color/common_signin_btn_light_text_focused" />
+
+                    <TableLayout
+                        android:id="@+id/mytable"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="3dp">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="3dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="順位"
+                                android:textColor="@android:color/holo_green_dark"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="名前"
+                                android:textColor="@android:color/holo_purple"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="出身"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="スコア"
+                                android:textColor="?attr/colorControlActivated"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="化石の数"
+                                android:textColor="@color/common_signin_btn_default_background"
+                                android:textSize="12dp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/my_data"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/my_rank"
+                                android:layout_width="wrap_content"
+                                android:layout_height="28dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:textColor="@color/wallet_dim_foreground_inverse_holo_dark"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/my_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:textColor="@android:color/holo_purple" />
+
+                            <TextView
+                                android:id="@+id/my_pref"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:textColor="@color/colorPrimaryDark" />
+
+                            <TextView
+                                android:id="@+id/my_score"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:textColor="?attr/colorControlActivated" />
+
+
+                            <TextView
+                                android:id="@+id/my_fossil"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:textColor="@color/common_signin_btn_default_background" />
+                        </TableRow>
+
+
+                    </TableLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="12"
+                    android:gravity="center"
+                    android:text="--------------------------------------------------------------------------------" />
+
+                <LinearLayout
+                    android:id="@+id/ten"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="3"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="21dp"
+                        android:layout_marginStart="21dp"
+                        android:layout_marginTop="5dp"
+                        android:text="上位：1～10位"
+                        android:textColor="@color/common_signin_btn_light_text_default" />
+
+                    <TableLayout
+                        android:id="@+id/table"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="3dp">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="3dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="順位"
+                                android:textColor="@android:color/holo_green_dark"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="名前"
+                                android:textColor="@android:color/holo_purple"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="出身"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="スコア"
+                                android:textColor="?attr/colorControlActivated"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="化石の数"
+                                android:textColor="@color/common_signin_btn_default_background"
+                                android:textSize="12dp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/rank1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:text="1"
+                                android:textColor="@android:color/background_dark" />
+
+                            <TextView
+                                android:id="@+id/name1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:textColor="@android:color/holo_purple" />
+
+                            <TextView
+                                android:id="@+id/pref1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:textColor="@color/colorPrimaryDark" />
+
+                            <TextView
+                                android:id="@+id/score1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:textColor="?attr/colorControlActivated" />
+
+
+                            <TextView
+                                android:id="@+id/fossil1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:textColor="@color/common_signin_btn_default_background" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/rank2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:text="2"
+                                android:textColor="@color/wallet_dim_foreground_inverse_holo_dark" />
+
+                            <TextView
+                                android:id="@+id/name2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:textColor="@android:color/holo_purple" />
+
+                            <TextView
+                                android:id="@+id/pref2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:textColor="@color/colorPrimaryDark" />
+
+                            <TextView
+                                android:id="@+id/score2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:textColor="?attr/colorControlActivated" />
+
+
+                            <TextView
+                                android:id="@+id/fossil2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:textColor="@color/common_signin_btn_default_background" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/rank3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:text="3"
+                                android:textColor="@android:color/background_dark" />
+
+                            <TextView
+                                android:id="@+id/name3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:textColor="@android:color/holo_purple" />
+
+                            <TextView
+                                android:id="@+id/pref3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:textColor="@color/colorPrimaryDark" />
+
+                            <TextView
+                                android:id="@+id/score3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:textColor="?attr/colorControlActivated" />
+
+
+                            <TextView
+                                android:id="@+id/fossil3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:textColor="@color/common_signin_btn_default_background" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/rank4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:text="4"
+                                android:textColor="@android:color/holo_green_dark" />
+
+                            <TextView
+                                android:id="@+id/name4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:textColor="@android:color/holo_purple" />
+
+                            <TextView
+                                android:id="@+id/pref4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:textColor="@color/colorPrimaryDark" />
+
+                            <TextView
+                                android:id="@+id/score4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:textColor="?attr/colorControlActivated" />
+
+
+                            <TextView
+                                android:id="@+id/fossil4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:textColor="@color/common_signin_btn_default_background" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/rank5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:text="5"
+                                android:textColor="@android:color/holo_green_dark" />
+
+                            <TextView
+                                android:id="@+id/name5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:textColor="@android:color/holo_purple" />
+
+                            <TextView
+                                android:id="@+id/pref5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:textColor="@color/colorPrimaryDark" />
+
+                            <TextView
+                                android:id="@+id/score5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:textColor="?attr/colorControlActivated" />
+
+
+                            <TextView
+                                android:id="@+id/fossil5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:textColor="@color/common_signin_btn_default_background" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/rank6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:text="6"
+                                android:textColor="@android:color/holo_green_dark" />
+
+                            <TextView
+                                android:id="@+id/name6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:textColor="@android:color/holo_purple" />
+
+                            <TextView
+                                android:id="@+id/pref6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:textColor="@color/colorPrimaryDark" />
+
+                            <TextView
+                                android:id="@+id/score6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:textColor="?attr/colorControlActivated" />
+
+
+                            <TextView
+                                android:id="@+id/fossil6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:textColor="@color/common_signin_btn_default_background" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/rank7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:text="7"
+                                android:textColor="@android:color/holo_green_dark" />
+
+                            <TextView
+                                android:id="@+id/name7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:textColor="@android:color/holo_purple" />
+
+                            <TextView
+                                android:id="@+id/pref7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:textColor="@color/colorPrimaryDark" />
+
+                            <TextView
+                                android:id="@+id/score7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:textColor="?attr/colorControlActivated" />
+
+
+                            <TextView
+                                android:id="@+id/fossil7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:textColor="@color/common_signin_btn_default_background" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/rank8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:text="8"
+                                android:textColor="@android:color/holo_green_dark" />
+
+                            <TextView
+                                android:id="@+id/name8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:textColor="@android:color/holo_purple" />
+
+                            <TextView
+                                android:id="@+id/pref8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:textColor="@color/colorPrimaryDark" />
+
+                            <TextView
+                                android:id="@+id/score8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:textColor="?attr/colorControlActivated" />
+
+
+                            <TextView
+                                android:id="@+id/fossil8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:textColor="@color/common_signin_btn_default_background" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/rank9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:text="9"
+                                android:textColor="@android:color/holo_green_dark" />
+
+                            <TextView
+                                android:id="@+id/name9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:textColor="@android:color/holo_purple" />
+
+                            <TextView
+                                android:id="@+id/pref9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:textColor="@color/colorPrimaryDark" />
+
+                            <TextView
+                                android:id="@+id/score9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:textColor="?attr/colorControlActivated" />
+
+
+                            <TextView
+                                android:id="@+id/fossil9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:textColor="@color/common_signin_btn_default_background" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/rank10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:text="10"
+                                android:textColor="@android:color/holo_green_dark" />
+
+                            <TextView
+                                android:id="@+id/name10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:textColor="@android:color/holo_purple" />
+
+                            <TextView
+                                android:id="@+id/pref10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:textColor="@color/colorPrimaryDark" />
+
+                            <TextView
+                                android:id="@+id/score10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:textColor="?attr/colorControlActivated" />
+
+
+                            <TextView
+                                android:id="@+id/fossil10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape"
+                                android:gravity="center"
+                                android:textColor="@color/common_signin_btn_default_background" />
+                        </TableRow>
+
+
+                    </TableLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5.3"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_tohome"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_customize4"
+                android:onClick="onClick"
+                android:text="マイページ"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/button_tohakkutu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_customize4"
+                android:onClick="onClick"
+                android:text="化石探し" />
+
+            <Button
+                android:id="@+id/button_tomuseum"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_customize4"
+                android:onClick="onClick"
+                android:text="博物館"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/button_torecord"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:background="@drawable/button_customize4"
+
+                android:text="記録"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

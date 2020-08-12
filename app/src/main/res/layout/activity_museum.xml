@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pattern">
+
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5.85"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/return1"
+                android:layout_width="50sp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="3sp"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/return1" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:layout_marginTop="7sp"
+                android:text="博物館"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="9dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="集めた化石を鑑賞しよう"
+                    android:textColor="@color/wallet_bright_foreground_holo_light"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.6">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/fossil1_1m"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/fossil1_1m"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:text="フクイサウルス"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/tree"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/put"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentTop="false"
+                android:layout_marginEnd="164dp"
+                android:layout_marginRight="164dp"
+                android:src="@drawable/tree" />
+
+            <ImageView
+                android:id="@+id/put"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/fossil1_1m"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/fossil1_1m"
+                android:layout_marginBottom="11dp"
+                android:layout_marginLeft="46dp"
+                android:layout_marginStart="46dp"
+                android:layout_weight="1"
+                android:src="@drawable/put" />
+
+            <ImageView
+                android:id="@+id/fossil1_1m"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:src="@drawable/fukuisaurusu1"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/fossil1_3m"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:src="@drawable/fukuisaurusu3"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/fossil1_2m"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:src="@drawable/fukuisaurusu2"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/f"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:layout_above="@+id/put"
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/f1" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>
